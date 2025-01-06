@@ -1,3 +1,4 @@
+from bson.objectid import ObjectId
 import pymongo
 
 
@@ -34,7 +35,7 @@ class AdsMongoClient:
         )
 
     def delete_advertising(self, user_id: int, doc_id: str):
-        self.ads_collection.delete_one({"user_id": user_id, "_id": doc_id})
+        self.ads_collection.delete_one({"user_id": user_id, "_id": ObjectId(doc_id)})
 
     def get_ads_by_user_id(self, user_id: int):
         ads = []
