@@ -13,7 +13,7 @@ from telegram.ext._jobqueue import JobQueue
 
 from mongo_client import ExpenseMongoClient
 
-BOT_TOKEN: Final = "7211398124:AAHCrwTsYKsweDV3_tQs-qj5M44V0PN7FlI"
+BOT_TOKEN: Final = "Bot_Token"
 # connect to your mongodb
 db_client = ExpenseMongoClient("localhost", 27017)
 
