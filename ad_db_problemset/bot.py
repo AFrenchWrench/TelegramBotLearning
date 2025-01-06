@@ -16,7 +16,7 @@ from telegram.ext import (
 
 from mongo_client import AdsMongoClient
 
-BOT_TOKEN: Final = "7211398124:AAG7v4aAkCuBOXJhMbcF0KqEvyRy9jFwNK4"
+BOT_TOKEN: Final = "Bot_Token"
 
 CATEGORY, PHOTO, DESCRIPTION = range(3)
 # db connection
